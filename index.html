@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-App-JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d1a81d2769.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section>
+
+        <header class="sign-in">
+
+            <h1>Sign in yourself</h1>
+
+            <form id="form-1">
+
+                <input type="text" name="username" placeholder="Enter your name">
+
+                <input type="number" name="userid" placeholder="Enter your id">
+
+                <button type="button" name="reg-btn">Submit <i class="fas fa-caret-right"></i> </button>
+
+            </form>
+
+        </header>
+
+        <main>
+
+            <div class="head">
+                <ul>
+                    <li class="userid"></li>
+                    <li class="username"></li>
+                    <li class="page">1/4</li>
+                </ul>
+            </div>
+
+            <div class="que-cont cont-1">
+
+                <div class="que que-1">
+                    <h1> &nbsp;<span>Q1-</span> &nbsp; &nbsp;How many provinces are there in Pakistan?</h1>
+                    <ul>
+                        <li><button onclick="right_selection(value)" value="5">5</button></li>
+                        <li><button onclick="wrong_selection()">4</button></li>
+                        <li><button onclick="wrong_selection()">3</button></li>
+                        <li><button onclick="wrong_selection()">2</button></li>
+                    </ul>
+                </div>
+
+                <div class="que que-2">
+                    <h1> &nbsp;<span>Q2-</span> &nbsp; &nbsp;How many seasons are there in Pakistan?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">1</button></li>
+                        <li><button onclick="wrong_selection()">2</button></li>
+                        <li><button onclick="wrong_selection()">3</button></li>
+                        <li><button onclick="right_selection(value)" value="4">4</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-3">
+                    <h1> &nbsp;<span>Q3-</span> &nbsp; &nbsp;How many wheels a car has?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">1</button></li>
+                        <li><button onclick="wrong_selection()">2</button></li>
+                        <li><button onclick="wrong_selection()">3</button></li>
+                        <li><button onclick="right_selection(4)" value="4">4</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-4">
+                    <h1> &nbsp;<span>Q4-</span> &nbsp; &nbsp;How many wheels a bike has?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">1</button></li>
+                        <li><button onclick="right_selection(2)" value="2">2</button></li>
+                        <li><button onclick="wrong_selection()">3</button></li>
+                        <li><button onclick="wrong_selection()">4</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-5">
+                    <h1> &nbsp;<span>Q5-</span> &nbsp; &nbsp;How many days are in a week?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">3days</button></li>
+                        <li><button onclick="wrong_selection()">2days</button></li>
+                        <li><button onclick="wrong_selection()">10days</button></li>
+                        <li><button onclick="right_selection(7)" value="7days">7days</button></li>
+                    </ul>
+                    <button class="sec-page-btn" >Next <i class="fas fa-caret-right"></i> </button>
+                </div>
+
+            </div>
+
+            <div class="que-cont cont-2">
+
+                <div class="que que-6">
+                    <h1> &nbsp;<span>Q6-</span> &nbsp; &nbsp;How many months are in a year?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">5months</button></li>
+                        <li><button onclick="wrong_selection()">25months</button></li>
+                        <li><button onclick="right_selection(12)" value="12months">12months</button></li>
+                        <li><button onclick="wrong_selection()">20months</button></li>
+                    </ul>
+                </div>
+
+                <div class="que que-7">
+                    <h1> &nbsp;<span>Q7-</span> &nbsp; &nbsp;Leap year comes after how many years?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">2years</button></li>
+                        <li><button onclick="wrong_selection()">10years</button></li>
+                        <li><button onclick="wrong_selection()">1years</button></li>
+                        <li><button onclick="right_selection(4)" value="4years">4years</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-8">
+                    <h1> &nbsp;<span>Q8-</span> &nbsp; &nbsp;If we divide 10 by 2 then what is the reminder?</h1>
+                    <ul>
+                        <li><button onclick="right_selection(0)" value="0">0</button></li>
+                        <li><button onclick="wrong_selection()">12</button></li>
+                        <li><button onclick="wrong_selection()">20</button></li>
+                        <li><button onclick="wrong_selection()">2</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-9">
+                    <h1> &nbsp;<span>Q9-</span> &nbsp; &nbsp;2*25=__?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">100</button></li>
+                        <li><button onclick="wrong_selection()">10</button></li>
+                        <li><button onclick="wrong_selection()">40</button></li>
+                        <li><button onclick="right_selection(50)" value="50">50</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-10">
+                    <h1> &nbsp;<span>Q10-</span> &nbsp; &nbsp;How many minutes are there in an hour?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">50min</button></li>
+                        <li><button onclick="wrong_selection()">10min</button></li>
+                        <li><button onclick="right_selection(60)" value="60">60min</button></li>
+                        <li><button onclick="wrong_selection()">100min</button></li>
+                    </ul>
+                    <button class="third-page-btn" >Next <i class="fas fa-caret-right"></i> </button>
+                </div>
+
+            </div>
+
+            <div class="que-cont cont-3">
+
+                <div class="que que-11">
+                    <h1> &nbsp;<span>Q11-</span> &nbsp; &nbsp;How many hours are there in one day?</h1>
+                    <ul>
+                        <li><button onclick="right_selection(24)" value="24">24hours</button></li>
+                        <li><button onclick="wrong_selection()">10hours</button></li>
+                        <li><button onclick="wrong_selection()">15hours</button></li>
+                        <li><button onclick="wrong_selection()">20hours</button></li>
+                    </ul>
+                </div>
+
+                <div class="que que-12">
+                    <h1> &nbsp;<span>Q12-</span> &nbsp; &nbsp;We have how many eyes?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">3eyes</button></li>
+                        <li><button onclick="right_selection(2)" value="2">2eyes</button></li>
+                        <li><button onclick="wrong_selection()">4eyes</button></li>
+                        <li><button onclick="wrong_selection()">1eye</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-13">
+                    <h1> &nbsp;<span>Q13-</span> &nbsp; &nbsp;10+2=__?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">20</button></li>
+                        <li><button onclick="wrong_selection()">8</button></li>
+                        <li><button onclick="right_selection(12)" value="12">12</button></li>
+                        <li><button onclick="wrong_selection()">5</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-14">
+                    <h1> &nbsp;<span>Q14-</span> &nbsp; &nbsp;5*4=__?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">5</button></li>
+                        <li><button onclick="wrong_selection()">10</button></li>
+                        <li><button onclick="wrong_selection()">4</button></li>
+                        <li><button onclick="right_selection(20)" value="20">20</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-15">
+                    <h1> &nbsp;<span>Q15-</span> &nbsp; &nbsp;We have how many fingers?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">5</button></li>
+                        <li><button onclick="wrong_selection()">11</button></li>
+                        <li><button onclick="wrong_selection()">50</button></li>
+                        <li><button onclick="right_selection(10)" value="10">10</button></li>
+                    </ul>
+                    <button class="fourth-page-btn" >Next <i class="fas fa-caret-right"></i> </button>
+                </div>
+
+            </div>
+
+                <div class="que-cont cont-4">
+
+                    <div class="que que-16">
+                        <h1> &nbsp;<span>Q16-</span> &nbsp; &nbsp;How many radians are in a circle?</h1>
+                        <ul>
+                            <li><button onclick="right_selection(2)" value="2">2rad</button></li>
+                            <li><button onclick="wrong_selection()">4rad</button></li>
+                            <li><button onclick="wrong_selection()">360rad</button></li>
+                            <li><button onclick="wrong_selection()">0rad</button></li>
+                        </ul>
+                    </div>
+    
+                    <div class="que que-17">
+                        <h1> &nbsp;<span>Q17-</span> &nbsp; &nbsp;How many degrees are there in the circle?</h1>
+                        <ul>
+                            <li><button onclick="wrong_selection()">180deg</button></li>
+                            <li><button onclick="wrong_selection()">55deg</button></li>
+                            <li><button onclick="right_selection(360)" value="360">360deg</button></li>
+                            <li><button onclick="wrong_selection()">50deg</button></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="que que-18">
+                        <h1> &nbsp;<span>Q18-</span> &nbsp; &nbsp;11*10=__?</h1>
+                        <ul>
+                            <li><button onclick="wrong_selection()">500</button></li>
+                            <li><button onclick="wrong_selection()">50</button></li>
+                            <li><button onclick="right_selection(110)" value="110">110</button></li>
+                            <li><button onclick="wrong_selection()">80</button></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="que que-19">
+                        <h1> &nbsp;<span>Q19-</span> &nbsp; &nbsp;How many countries are there in world?</h1>
+                        <ul>
+                            <li><button onclick="wrong_selection()">200</button></li>
+                            <li><button onclick="right_selection(195)" value="195">195</button></li>
+                            <li><button onclick="wrong_selection()">100</button></li>
+                            <li><button onclick="wrong_selection()">555</button></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="que que-20">
+                        <h1> &nbsp;<span>Q20-</span> &nbsp; &nbsp;Facebook was founded by how many people?</h1>
+                        <ul>
+                            <li><button onclick="wrong_selection()">10</button></li>
+                            <li><button onclick="wrong_selection()">1</button></li>
+                            <li><button onclick="wrong_selection()">5</button></li>
+                            <li><button onclick="right_selection(4)" value="4">4</button></li>
+                        </ul>
+                        <button class="fifth-page-btn" >Next <i class="fas fa-caret-right"></i> </button>
+                    </div>
+    
+                </div>
+
+            </main>
+            
+            <div class="result-page">
+                <h1>your result is here</h1>
+                <ul>
+                    <li>Name: <span class="username"></span> </li>
+                    <li>id: <span class="userid"></span> </li>
+                    <li>total-que: <span>20</span> </li>
+                    <li>correct-que: <span class="correct_que"></span> </li>
+                    <li>wrong-que: <span class="wrong_que"></span> </li>
+                    <li>attempted-que: <span class="att_que"></span></li>
+                    <li>status: <span class="status"></span> </li>
+                </ul>
+                <b>Share your result</b>
+                <ol>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-whatsapp"></i></li>
+                </ol>
+            </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
