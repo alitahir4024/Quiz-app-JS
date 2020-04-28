@@ -1,2 +1,20 @@
 # Quiz-app-JS
-This website is based on online test taking system like NTS.In this project I have developed the functionality of taking the online test by using pure HTML CSS and most important JS.The result of the test taken is also developed.Basically this project is to test the skills of JS.This project contains dynamic style,unique hover effects and so much more.In the HTML part of this project there are two data attributes to each choice i.e for both wrong and right choice.
+
+This website is based on online test taking system like NTS.
+
+### Developed With:
+
+* HTML.
+* CSS.
+* JS.
+
+### Silent Features:
+
+* Result of test taken is generated.
+* Unique and dynamic design.
+* Contains 50 questions.
+* Contains 5 questions per page.
+
+### Project Preview:
+
+(https://ali-tahir4024.github.io/Quiz-app-JS/.)
