@@ -17,4 +17,4 @@ This website is based on online test taking system like NTS.
 
 ### Project Preview:
 
-[Quiz App](https://ali-tahir4024.github.io/Quiz-app-JS/)
+[Quiz App](https://alitahir4024.github.io/Quiz-app-JS/)
